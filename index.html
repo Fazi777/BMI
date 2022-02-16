@@ -55,6 +55,9 @@
     #history {
         height:auto
     }
+    #wynikBMI{
+        font-weight: bold;
+    }
     </style>
     <script>
      
@@ -119,7 +122,7 @@
        wyswietlBMI.textContent = 'Twoje BMI to '+ wynikBMI;
         let now = new Date();
        let listaHistorii = document.querySelector('#zapisyhistorii')
-       listaHistorii.innerHTML += '<li> BMI ' + wynikBMI  + ' Pomiar z ' + now.toLocaleString("pl") + '</li>'
+       listaHistorii.innerHTML += '<li> BMI ' + wynikBMI  + ' Waga '+ podajWage + " Wzrost "+ podajWzrost + ' Pomiar z ' + now.toLocaleString("pl") + '</li>'
 
         
         BMI.push(wynikBMI)
